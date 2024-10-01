@@ -81,7 +81,7 @@ The client app will be available at http://localhost:5173
 
 #### Client Side: A simple React interface that allows users to send and receive messages.
 #### Server Side: A Node.js server that manages WebSocket connections and broadcasts messages to all connected clients.
-### Key Technologies
+## <u>Key Technologies</u>
 ##### React (TypeScript): For the client-side UI.
 ##### Node.js (TypeScript): For handling WebSocket connections on the server side.
 ##### WebSockets: For enabling real-time communication between clients and the server.
