@@ -8,6 +8,10 @@ This project demonstrates how to build a real-time chat application using **WebS
 - Uses WebSockets for continuous two-way communication.
 - Built with **React (TypeScript)** and **Node.js (TypeScript)**.
 - Lightweight and efficient.
+  
+
+https://github.com/user-attachments/assets/bd9fb42c-07a0-4aa7-8e8d-e7ea5c5d5eaf
+
 
 ## Getting Started
 
@@ -85,3 +89,6 @@ The client and server apps will be available at on your localhost ports.
 ##### React (TypeScript): For the client-side UI.
 ##### Node.js (TypeScript): For handling WebSocket connections on the server side.
 ##### WebSockets: For enabling real-time communication between clients and the server.
+
+<img width="564" alt="websocket-p-2" src="https://github.com/user-attachments/assets/e05a4e7c-d033-4fe0-9686-5aa934cb3b0c">
+<img width="1292" alt="websocket-p-1" src="https://github.com/user-attachments/assets/935bc253-3efa-4efe-b638-1ec432a3dd69">
