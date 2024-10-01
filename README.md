@@ -90,5 +90,4 @@ The client and server apps will be available at on your localhost ports.
 ##### Node.js (TypeScript): For handling WebSocket connections on the server side.
 ##### WebSockets: For enabling real-time communication between clients and the server.
 
-<img width="564" alt="websocket-p-2" src="https://github.com/user-attachments/assets/e05a4e7c-d033-4fe0-9686-5aa934cb3b0c">
 <img width="1292" alt="websocket-p-1" src="https://github.com/user-attachments/assets/935bc253-3efa-4efe-b638-1ec432a3dd69">
