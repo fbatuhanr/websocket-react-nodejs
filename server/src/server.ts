@@ -11,7 +11,8 @@ wss.on('connection', (ws: WebSocket) => {
 
   ws.on('message', (message: string) => {
     console.log(`Received: ${message}`);
-    // Gelen mesajı tüm bağlı istemcilere yayınla
+    
+    // Broadcast the message to all connected clients
     wss.clients.forEach((client) => {
       if (client.readyState === client.OPEN) {
         client.send(JSON.stringify({ message: message.toString() }));
