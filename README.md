@@ -74,7 +74,7 @@ Launch the React app by running:
 cd ../client
 npm run dev
 ```
-The client app will be available at http://localhost:5173
+The client and server apps will be available at on your localhost ports.
 
 ### How It Works
  ***The project utilizes WebSockets to maintain an open connection between the client and server, enabling real-time, full-duplex communication. Once a connection is established, clients can send and receive messages instantly, without the need for repetitive HTTP requests.***
