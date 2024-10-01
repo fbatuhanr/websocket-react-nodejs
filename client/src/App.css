@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.chat {
+    width: 512px;
+    margin: auto;
+    text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.chat .title {
+    font-size: 36px;
+    margin:10px 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.chat .content {
+    border:1px solid #ccc;
+    height: 512px;
+    font-size: 20px;
+    border-radius: 3px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.chat .content p {
+    margin:7.5px 2.5px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat .content p:nth-child(odd) {
+    background-color: #e4e4e4;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.chat .content p:nth-child(even) {
+    background-color: #f3f3f3;
 }
-
-.card {
-  padding: 2em;
+.chat .message {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0 2px;
 }
-
-.read-the-docs {
-  color: #888;
+.chat .message input {
+    flex: 1;
+    font-size: 20px;
+    padding: 15px 20px;
+    border:1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.chat .message button {
+    cursor: pointer;
+    width: 100px;
+    font-size: 20px;
+    border:1px solid #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

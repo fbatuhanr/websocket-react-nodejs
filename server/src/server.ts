@@ -1,15 +1,15 @@
-import express from 'express';
-import { WebSocketServer } from 'ws';
-import http from 'http';
+import express, { Request, Response } from 'express';
+import { WebSocketServer, WebSocket } from 'ws';
+import http from 'http';  
 
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server });
 
-wss.on('connection', (ws) => {
+wss.on('connection', (ws: WebSocket) => {
   console.log('New client connected');
 
-  ws.on('message', (message) => {
+  ws.on('message', (message: string) => {
     console.log(`Received: ${message}`);
     // Gelen mesajı tüm bağlı istemcilere yayınla
     wss.clients.forEach((client) => {
@@ -24,7 +24,7 @@ wss.on('connection', (ws) => {
   });
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('WebSocket server is running');
 });
 
