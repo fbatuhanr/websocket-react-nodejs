@@ -24,11 +24,19 @@ To run this project locally, follow the steps below:
 ```bash
 websocket-react-nodejs/
 │
-├── client/      # React (TypeScript) client-side code
-├── server/      # Node.js (TypeScript) server-side code
-├── .gitignore
-├── README.md
-└── package.json
+├── server/                    # Contains the WebSocket server
+│   ├── src/                   # Source folder for TypeScript files
+│   │   └── server.ts          # Main WebSocket server file
+│   ├── tsconfig.json          # TypeScript configuration for the server
+│   └── package.json           # Dependencies and scripts for the server
+│
+└── client/                    # React client application
+    ├── src/                   # React components and other files
+    │   ├── App.tsx            # Main React component handling WebSocket logic
+    │   └── ...                # Other React-related files
+    ├── tsconfig.json          # TypeScript configuration for the client
+    ├── package.json           # Dependencies and scripts for the client
+    └── public/                # Static assets (HTML, favicon, etc.)
 ```
 
 Installation
@@ -43,13 +51,13 @@ For both the client and server, you need to install the necessary dependencies.
 ```
 
 
-# Install server dependencies
+### Install server dependencies
 ```bash
 cd server
 npm install
 ```
 
-# Install client dependencies
+### Install client dependencies
 ```bash
 cd ../client
 npm install
@@ -73,7 +81,7 @@ The client app will be available at http://localhost:5173
 
 #### Client Side: A simple React interface that allows users to send and receive messages.
 #### Server Side: A Node.js server that manages WebSocket connections and broadcasts messages to all connected clients.
-#### Key Technologies
+### Key Technologies
 ##### React (TypeScript): For the client-side UI.
 ##### Node.js (TypeScript): For handling WebSocket connections on the server side.
 ##### WebSockets: For enabling real-time communication between clients and the server.
