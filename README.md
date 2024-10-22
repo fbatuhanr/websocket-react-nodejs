@@ -2,6 +2,9 @@
 
 This project demonstrates how to build a real-time chat application using **WebSockets** with **React** and **Node.js**. It's a simple yet powerful implementation of full-duplex communication, ideal for applications that require real-time features such as chat systems, live updates, and notifications.
 
+You can read the full explanation and step-by-step guide in the Medium article:  
+[Real-time communication with WebSocket - Medium](https://fbatuhanr.medium.com/real-time-communication-with-websocket-a-react-and-node-js-application-db33cae889ae)
+
 ## Features
 
 - Real-time messaging between clients and the server.
